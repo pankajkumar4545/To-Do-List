@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+form input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  margin-left: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9fafb;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.actions button {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.actions .edit {
+  background: #10b981;
+  color: white;
+}
+
+.actions .delete {
+  background: #ef4444;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
